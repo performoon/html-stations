@@ -33,3 +33,22 @@ footer {
   height: 20px;
   background-color: #ffffff;
 }
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  p.card__title {
+    font-size: 10px;
+  }
+  p.card__description {
+    font-size: 8px;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 320px) {
+  p.card__description {
+    display: none;
+  }
+}
